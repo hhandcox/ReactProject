@@ -1,19 +1,15 @@
 import React from 'react';
-import NucampLogo from './app/assets/img/logo.png';
-import { Container, Navbar, NavbarBrand } from 'reactstrap';
 import './App.css';
+import CampsitesList from './features/campsites/CampsitesList.js';
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
     <div className="App">
-      <Navbar dark color='primary' sticky='top' expand='md'>
-          <Container>
-              <NavbarBrand href='/'>
-                  <img src={NucampLogo} alt='nucamp logo' />
-              </NavbarBrand>
-          </Container>
-      </Navbar>
-      I'm ready for workshop!
+      <Header />
+      <CampsitesList />
+      <Footer />
     </div>
   );
 }
